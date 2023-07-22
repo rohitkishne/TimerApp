@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetYourTimer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">Multiple Timers App</header>
+    <section class="timer-container">
+        <form class="set-timer">
+            <div class="setTime">
+                SetTime:
+            </div>
+            <div class="hr-min-sec">
+                <input type="number" name="time-value" id="hr-value" class="time" placeholder="HH" min="0" max="12" required>
+                <span>:</span>
+                <input type="number" name="time-value" id="min-value" class="time" placeholder="MM" min="0" max="60" required>
+                <span>:</span>
+                <input type="number" name="time-value" id="sec-value" class="time" placeholder="SS" min="0" max="60" required>
+            </div>
+            <button id="set-btn" class="set-btn">Set</button>
+        </form>
+        <div class="current-timer-heading">
+            Current Timers
+        </div>
+        <div id="new-timer" class="new-timer">
+            <p id="empty-timer">You have no timers currently!</p>
+            <!-- <form class="set-new-timer">
+                <div class="setTime">
+                    Time Left:
+                </div>
+                <div class="hr-min-sec">
+                    <input type="number" name="time-value" id="time-value" class="time" placeholder="HH" min="1" max="12" readonly>
+                    <span>:</span>
+                    <input type="number" name="time-value" class="time" placeholder="MM" min="0" max="60" readonly>
+                    <span>:</span>
+                    <input type="number" name="time-value" class="time" placeholder="SS" min="0" max="60" readonly>
+                </div>
+                <button id="delete-btn" class="set-btn">Delete</button>
+            </form> -->
+        </div>
+    </section>
+    <script src="./script.js">
+
+    </script>
+</body>
+</html>

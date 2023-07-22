@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}   
+
+html{
+    background-color: black;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5em;
+    align-items: center;
+}
+
+.timer-container{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.set-timer, .set-new-timer{
+    width: 50%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: #4e36b54f;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5px;
+    align-items: center;
+
+}
+
+.setTime{
+    font-size: 1.5em;
+}
+
+.hr-min-sec{
+    width: 60%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.2em;
+}
+
+.hr-min-sec .time{
+    width: 15%;
+    outline: none;
+    border: none;
+    background-color: #181138;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.time::placeholder{
+    color: white;
+    text-decoration: underline;
+}
+
+.time::-webkit-outer-spin-button,
+.time::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.set-btn{
+    width: 15%;
+    font-size: 1.2em;
+    height: 1.8em;
+    background: #ffff00b8;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.current-timer-heading{
+    width: 20%;
+    height: 2.5em;
+    border-radius: 2em;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: emoji;
+}
+
+.new-timer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
+    gap: 2em;
+    text-align: center;
+}
+
+.set-new-timer{
+    width: 100%;
+}
+
+.new-timer > p{
+    font-size: 1.2em;
+}
